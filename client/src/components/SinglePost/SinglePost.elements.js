@@ -100,26 +100,26 @@ export const useStyles = makeStyles((theme) => ({
       display: "flex",
       justifyContent: "center",
       margin: "20px 0",
-    },
 
-    "& img": {
-      maxWidth: "600px",
-      transition: "all .2s ease-in-out",
+      "& img": {
+        maxWidth: "600px",
+        transition: "all .2s ease-in-out",
 
-      "&:hover": {
-        transform: "scale(1.03)",
+        "&:hover": {
+          transform: "scale(1.03)",
+        },
+        [theme.breakpoints.down("md")]: {
+          width: "100%",
+          height: "auto",
+          objectFit: "cover",
+          display: "block",
+          verticalAlign: "middle",
+        },
       },
-      [theme.breakpoints.down("md")]: {
-        width: "100%",
-        height: "auto",
-        objectFit: "cover",
-        display: "block",
-        verticalAlign: "middle",
-      },
-    },
 
-    "& p": {
-      fontSize: "17px",
+      "& p": {
+        fontSize: "17px",
+      },
     },
   },
   headerRecentPosts: {

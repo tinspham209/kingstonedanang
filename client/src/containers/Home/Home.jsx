@@ -48,8 +48,7 @@ const Home = () => {
   const about = useSelector((state) => state.api.about);
 
   useEffect(() => {
-    document.title =
-      "KingStone Đà Nẵng - Cung ứng - thi công các hạng mục về đá hoa cương (Granitie & Marble)";
+    document.title = "KingStone Đà Nẵng - Đá Granite, Marble tại Đà Nẵng";
   }, []);
 
   useEffect(() => {
