@@ -31,9 +31,12 @@ const HeroPage = ({ slides, idScrollTo }) => {
                     />
                     <Container maxWidth="lg">
                       <div className={classes.heroContent}>
-                        <p className={classes.heroContentTitle1}>
+                        <Typography
+                          variant="h4"
+                          className={classes.heroContentTitle1}
+                        >
                           {slide.title}
-                        </p>
+                        </Typography>
                         <p className={classes.heroContentTitle}>
                           {slide.subTitle}
                         </p>

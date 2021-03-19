@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   hero: {
-    height: "45vh",
+    height: "50vh",
     position: "relative",
     overflow: "hidden",
     backgroundColor: "#cab9a9",
@@ -74,13 +74,13 @@ export const useStyles = makeStyles((theme) => ({
     color: "#fff",
   },
   heroContentTitle: {
-    fontSize: "100px",
+    fontSize: "80px",
     fontWeight: "bold",
     textTransform: "uppercase",
     fontFamily: '"BebasNeue","Lato", san-serif',
 
     [theme.breakpoints.down("md")]: {
-      fontSize: "30px",
+      fontSize: "24px",
       letterSpacing: "3px",
       paddingTop: "20px",
       paddingBottom: "20px",
@@ -93,8 +93,8 @@ export const useStyles = makeStyles((theme) => ({
     fontFamily: '"BebasNeue","Lato", san-serif',
 
     [theme.breakpoints.down("md")]: {
-      fontSize: "28px",
-      letterSpacing: "3px",
+      fontSize: "24px",
+      // letterSpacing: "3px",
     },
   },
 

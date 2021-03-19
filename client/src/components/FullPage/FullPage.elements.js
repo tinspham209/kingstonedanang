@@ -74,13 +74,14 @@ export const useStyles = makeStyles((theme) => ({
     color: "#fff",
   },
   heroContentTitle: {
-    fontSize: "100px",
+    fontSize: "80px",
     fontWeight: "bold",
     textTransform: "uppercase",
-    fontFamily: '"BebasNeue","Lato", san-serif',
+    fontFamily: '"Source Sans Pro","Lato", san-serif',
+    textAlign: "center",
 
     [theme.breakpoints.down("md")]: {
-      fontSize: "30px",
+      fontSize: "24px",
       letterSpacing: "3px",
       paddingTop: "20px",
       paddingBottom: "20px",
@@ -90,10 +91,10 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "100px",
     fontWeight: "bold",
     textTransform: "uppercase",
-    fontFamily: '"BebasNeue","Lato", san-serif',
+    fontFamily: '"Source Sans Pro","Lato", san-serif',
 
     [theme.breakpoints.down("md")]: {
-      fontSize: "28px",
+      fontSize: "26px",
       letterSpacing: "3px",
     },
   },
@@ -101,8 +102,9 @@ export const useStyles = makeStyles((theme) => ({
   heroContentSubTitle: {
     fontSize: "35px",
     textTransform: "uppercase",
-    fontFamily: '"BebasNeue","Lato", san-serif',
+    fontFamily: '"Source Sans Pro","Lato", san-serif',
     letterSpacing: "10px",
+    textAlign: "center",
 
     [theme.breakpoints.down("md")]: {
       fontSize: "20px",
