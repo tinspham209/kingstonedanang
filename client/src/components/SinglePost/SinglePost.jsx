@@ -101,7 +101,7 @@ const SinglePost = ({ post, recentPosts }) => {
                   <div className={classes.blockContent}>
                     <BlockContent
                       blocks={post.body}
-                      projectId="1nauekv7"
+                      projectId="ousajcjn"
                       dataset="production"
                     />
                   </div>

@@ -96,6 +96,25 @@ export const useStyles = makeStyles((theme) => ({
     borderBottom: "2px solid rgba(246,194,73, 1)",
     width: "100%",
 
+    "& h1": {
+      fontSize: "80px",
+    },
+
+    "& h2": {
+      fontSize: "50px",
+    },
+
+    "& h3": {
+      fontSize: "35px",
+    },
+    "& h4": {
+      fontSize: "20px",
+    },
+
+    "& p": {
+      fontSize: "20px",
+    },
+
     "& figure": {
       display: "flex",
       justifyContent: "center",
@@ -104,6 +123,9 @@ export const useStyles = makeStyles((theme) => ({
       "& img": {
         maxWidth: "600px",
         transition: "all .2s ease-in-out",
+        cursor: "default",
+        borderRadius: "10px",
+        boxShadow: "10px 10px 43px 0px rgba(0,0,0,0.75)",
 
         "&:hover": {
           transform: "scale(1.03)",
@@ -116,9 +138,25 @@ export const useStyles = makeStyles((theme) => ({
           verticalAlign: "middle",
         },
       },
+      [theme.breakpoints.down("md")]: {
+        "& h1": {
+          fontSize: "60px",
+        },
 
-      "& p": {
-        fontSize: "17px",
+        "& h2": {
+          fontSize: "40px",
+        },
+
+        "& h3": {
+          fontSize: "25px",
+        },
+        "& h4": {
+          fontSize: "17.5px",
+        },
+
+        "& p": {
+          fontSize: "20px",
+        },
       },
     },
   },
