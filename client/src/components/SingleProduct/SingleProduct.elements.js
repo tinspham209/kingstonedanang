@@ -84,6 +84,7 @@ export const useStyles = makeStyles((theme) => ({
     verticalAlign: "middle",
     borderRadius: "20px",
     border: "3px solid rgba(246,194,73, 1)",
+    boxShadow: "10px 10px 43px -5px rgba(0,0,0,0.75)",
     transition: "all .2s ease-in-out",
 
     "&:hover": {
@@ -285,6 +286,24 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "20px",
     padding: "20px 0",
     width: "100%",
+    "& h1": {
+      fontSize: "60px",
+    },
+
+    "& h2": {
+      fontSize: "40px",
+    },
+
+    "& h3": {
+      fontSize: "25px",
+    },
+    "& h4": {
+      fontSize: "17.5px",
+    },
+
+    "& p": {
+      fontSize: "20px",
+    },
 
     "& figure": {
       display: "flex",
@@ -296,6 +315,7 @@ export const useStyles = makeStyles((theme) => ({
       width: "100%",
       maxWidth: "600px",
       transition: "all .2s ease-in-out",
+      borderRadius: "10px",
 
       "&:hover": {
         transform: "scale(1.03)",
@@ -307,10 +327,6 @@ export const useStyles = makeStyles((theme) => ({
         display: "block",
         verticalAlign: "middle",
       },
-    },
-
-    "& p": {
-      fontSize: "18px",
     },
   },
 }));

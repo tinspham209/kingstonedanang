@@ -79,7 +79,7 @@ const SingleProduct = ({ product, special }) => {
               <div className={classes.blockContent}>
                 <BlockContent
                   blocks={product.body}
-                  projectId="1nauekv7"
+                  projectId="ousajcjn"
                   dataset="production"
                 />
               </div>
