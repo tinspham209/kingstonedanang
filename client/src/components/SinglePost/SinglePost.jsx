@@ -23,7 +23,6 @@ function urlFor(source) {
 }
 
 const SinglePost = ({ post, recentPosts }) => {
-  console.log("post: ", post);
   const classes = useStyles();
 
   useEffect(() => {
