@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Router, Switch, Route } from "react-router-dom";
 import ReactGA from "react-ga";
 import { createBrowserHistory } from "history";
 import { Footer, Navbar, NotFound, Spinner } from "./components";
@@ -12,7 +12,7 @@ const Blog = React.lazy(() => import("./pages/Blog/Blog"));
 const Products = React.lazy(() => import("./pages/Products/Products"));
 const Stones = React.lazy(() => import("./pages/Stones/Stones"));
 const Stores = React.lazy(() => import("./pages/Stores/Stores"));
-// const About = React.lazy(() => import("./pages/About/About"));
+const About = React.lazy(() => import("./pages/About/About"));
 const SinglePost = React.lazy(() =>
   import("./containers/SinglePost/SinglePost")
 );
@@ -49,7 +49,7 @@ function App() {
           <Route path="/stone" exact component={Stones} />
           <Route path="/stone/:slug" exact component={SingleProduct} />
           <Route path="/stores" exact component={Stores} />
-          {/* <Route path="/about" exact component={About} />  */}
+          <Route path="/about" exact component={About} />
           <Route component={NotFound} />
         </Switch>
         <Footer />

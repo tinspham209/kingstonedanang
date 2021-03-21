@@ -84,6 +84,15 @@ const Navbar = () => {
                       Liên hệ
                     </NavLink>
                   </li>
+                  <li className={classes.nav__item}>
+                    <NavLink
+                      to="/about"
+                      className={classes.nav__link}
+                      activeClassName={classes.activeClass}
+                    >
+                      Về chúng tôi
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
             </Container>
