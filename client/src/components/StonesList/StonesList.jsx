@@ -18,7 +18,6 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { stone as productsId } from "../../data";
 
 const StonesList = ({ products }) => {
-  console.log("products: ", products);
   const classes = useStyles();
 
   const scrollToCategory = (id) => {
