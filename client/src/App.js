@@ -1,5 +1,7 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ReactGA from "react-ga";
+import { createBrowserHistory } from "history";
 import { Footer, Navbar, NotFound, Spinner } from "./components";
 import ScrollToTop from "./utils";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -18,10 +20,22 @@ const SingleProduct = React.lazy(() =>
   import("./containers/SingleProduct/SingleProduct")
 );
 
+const TRACKING_ID = "G-4LQYYDFK5G";
+ReactGA.initialize(TRACKING_ID);
+
+const history = createBrowserHistory();
+history.listen((location) => {
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+});
+
 function App() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
   return (
     <Suspense fallback={<Spinner />}>
-      <Router>
+      <Router history={history}>
         <CssBaseline />
         <GlobalStyle />
         <ScrollToTop />
