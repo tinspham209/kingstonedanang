@@ -13,7 +13,9 @@ const Footer = () => {
             <div className={classes.footer__centerText}>
               CÔNG TY TNHH TRANG TRÍ NỘI - NGOẠI THẤT
             </div>
-            <div className={classes.footer__centerText}>KING STONE ĐÀ NẴNG</div>
+            <div className={classes.footer__centerText}>
+              KINGSTONE Co., LTD - KINGSTONE ĐÀ NẴNG
+            </div>
             <div className={classes.footer__centerText}>
               VPGD:{" "}
               <a

@@ -1,5 +1,5 @@
 import L from "leaflet";
-import iconUrl from "../../../assets/img/logoSecondary.png";
+import iconUrl from "../../../assets/img/logoMain.webp";
 
 const icon1 = new L.Icon({
   iconUrl: iconUrl,

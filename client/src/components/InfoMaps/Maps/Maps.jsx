@@ -9,7 +9,7 @@ import {
 import "./Maps.css";
 import "leaflet/dist/leaflet.css";
 import { icon1, icon2 } from "./IconMarker";
-import logoImg from "../../../assets/img/logoSecondary.png";
+import logoImg from "../../../assets/img/logoMain.webp";
 const Map = () => {
   const position1 = [16.053448, 108.241285];
   const position2 = [16.019548898981633, 108.25349247288918];

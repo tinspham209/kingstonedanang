@@ -10,8 +10,8 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     borderTop: "2px solid rgba(246,194,73, 1)",
-    paddingTop: "20px",
-    paddingBottom: "20px",
+    paddingTop: "30px",
+    paddingBottom: "30px",
 
     [theme.breakpoints.down("md")]: {
       paddingTop: "30px",
