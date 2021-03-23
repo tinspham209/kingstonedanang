@@ -75,10 +75,10 @@ For the project to build, these must exist with exact filenames:
 
 - Clone this project
 
-- Go to `./noorcoffeev20`
+- Go to `/server`
 
 ```
-cd ./noorcoffeev20
+cd ./server
 ```
 
 - Install dependencies
@@ -87,7 +87,7 @@ cd ./noorcoffeev20
 npm install
 ```
 
-- Start packager, server is running on PORT 5000
+- Start packager, server is running on **PORT 5000**
 
 ```
 npm start
@@ -95,7 +95,7 @@ npm start
 
 **Setup Client**
 
-- cd to root folder
+- Go to `/client`
 
 - Install dependencies
 
@@ -103,7 +103,7 @@ npm start
 npm install
 ```
 
-- Start packager, server is running on PORT 3000
+- Start packager, server is running on **PORT 3000**
 
 ```
 npm start
@@ -112,8 +112,27 @@ npm start
 ### Bugs:
 
 - Logo Img on `navbar` & `footer` has margin on IOS devices
-- Img on SinglePost on IOS devices has broken
 - Components is NOT re-usable
+
+### How to Deploy
+
+**Client:**
+
+- cd to `client`
+- run this line:
+
+```
+npm run deployfirebase
+```
+
+**Server:**
+
+- cd to `server`
+- run this line:
+
+```
+sanity deploy
+```
 
 ### How to name a folder and a file
 
