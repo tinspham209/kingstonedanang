@@ -30,6 +30,17 @@ const Footer = () => {
             <div className={classes.footer__centerText}>
               Xưởng gia công: Lô 3 Nguyễn Đức Thuận, Q.Ngũ Hành Sơn, TP Đà Nẵng
             </div>
+            <div className={classes.footer__centerText}>
+              Website:{" "}
+              <a
+                href="https://kingstonedanang.com"
+                target="__blank"
+                aria-label="Facebook"
+                className={classes.footer__centerTins}
+              >
+                https://kingstonedanang.com
+              </a>
+            </div>
           </div>
           <div className={classes.footer__right}>
             <div className={classes.footer__centerText}>LIÊN HỆ</div>
@@ -64,6 +75,18 @@ const Footer = () => {
                 className={classes.footer__centerTins}
               >
                 kingstonedanang@gmail.com
+              </a>{" "}
+            </div>
+            <div className={classes.footer__centerText}>
+              Thiết kế website:
+              <a
+                href="https://www.tinspham.info"
+                target="__blank"
+                aria-label="Facebook"
+                className={classes.footer__centerTins}
+              >
+                {" "}
+                Tins
               </a>{" "}
             </div>
           </div>

@@ -125,4 +125,58 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "25px",
     },
   },
+
+  contact: {
+    position: "fixed",
+    left: "20px",
+
+    bottom: "50px",
+    zIndex: "999",
+
+    [theme.breakpoints.down("md")]: {
+      bottom: "50px",
+    },
+  },
+
+  contactItem: {
+    "& .tooltip .tooltiptext": {
+      visibility: "hidden",
+      width: "130px",
+      backgroundColor: "#00aff2",
+      color: "#fff",
+      textAlign: "center",
+      padding: "5px 0",
+      borderRadius: "10px",
+
+      position: "absolute",
+      zIndex: "999",
+      left: "70px",
+      top: "25px",
+    },
+
+    "& .tooltip2 .tooltiptext": {
+      top: "110px",
+    },
+
+    "&:hover .tooltip .tooltiptext": {
+      visibility: "visible",
+    },
+  },
+
+  iconLink: {
+    width: "60px",
+    height: "60px",
+    fontSize: "40px",
+    backgroundColor: "#00aff2",
+    borderRadius: "50%",
+    alignItems: "center",
+    justifyContent: "center",
+    display: "flex",
+    marginTop: "20px",
+  },
+  icon: {
+    width: "50px",
+    height: "50px",
+    objectFit: "cover",
+  },
 }));

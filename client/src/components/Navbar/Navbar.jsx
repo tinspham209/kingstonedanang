@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
 import { IconContext } from "react-icons/lib";
 import { NavLink } from "react-router-dom";
 import { useStyles } from "./Navbar.elements";
 
 import logoImg from "../../assets/img/logoMain.webp";
 import { AppBar, Container } from "@material-ui/core";
+import ZaloIcon from "../../assets/img/icon-zalo.png";
 
 const Navbar = () => {
   const classes = useStyles();
@@ -97,6 +99,36 @@ const Navbar = () => {
               </div>
             </Container>
           </AppBar>
+          <div className={classes.contact}>
+            <div className={classes.contactItem}>
+              <a
+                href="tel:0919772828"
+                target="__blank"
+                aria-label="phone"
+                className={classes.iconLink}
+              >
+                <FiPhone className={classes.icon1} />
+              </a>
+              <div className="tooltip">
+                <span className="tooltiptext">
+                  Số điện thoại: 0919.77.28.28{" "}
+                </span>
+              </div>
+            </div>
+            <div className={classes.contactItem}>
+              <a
+                href="https://zalo.me/84919772828"
+                target="__blank"
+                aria-label="zalo"
+                className={classes.iconLink}
+              >
+                <img src={ZaloIcon} alt="zalo" className={classes.icon} />
+              </a>
+              <div className="tooltip tooltip2">
+                <span className="tooltiptext">Zalo: 0919.77.28.28 </span>
+              </div>
+            </div>
+          </div>
         </div>
       </IconContext.Provider>
     </>
