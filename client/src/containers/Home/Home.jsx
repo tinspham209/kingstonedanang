@@ -37,6 +37,7 @@ import {
   TRUCOT,
 } from "../../app/ItemTypes";
 import { useSelector } from "react-redux";
+import Modal from "../Modal/Modal";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -176,13 +177,12 @@ const Home = () => {
 
   return (
     <>
+      <Modal />
       <FullPage />
       <LazyLoadComponent>
         <InfoSection />
       </LazyLoadComponent>
-      <LazyLoadComponent>
-        <HighlightPosts />
-      </LazyLoadComponent>
+
       <LazyLoadComponent>
         <Products
           products={productSpecial}
@@ -196,6 +196,9 @@ const Home = () => {
           title="Danh mục Đá"
           redirect="stone"
         />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <HighlightPosts />
       </LazyLoadComponent>
       <LazyLoadComponent>
         <InfoMaps />

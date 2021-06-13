@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { IconContext } from "react-icons/lib";
@@ -8,9 +9,12 @@ import { useStyles } from "./Navbar.elements";
 import logoImg from "../../assets/img/logoMain.webp";
 import { AppBar, Container } from "@material-ui/core";
 import ZaloIcon from "../../assets/img/icon-zalo.png";
+import baogiaIcon from "../../assets/img/baogia.webp";
+import { setModalBaoGia } from "../../app/slice/fetchApi";
 
 const Navbar = () => {
   const classes = useStyles();
+  const dispatch = useDispatch();
   const [click, setClick] = useState(false);
 
   const handleClick = () => {
@@ -19,6 +23,11 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setClick(false);
+  };
+
+  const handleModalBaoGia = () => {
+    const action = setModalBaoGia(true);
+    dispatch(action);
   };
 
   return (
@@ -101,6 +110,26 @@ const Navbar = () => {
           </AppBar>
           <div className={classes.contact}>
             <div className={classes.contactItem}>
+              <div
+                href="/"
+                target="__blank"
+                aria-label="phone"
+                className={classes.iconLink}
+                onClick={handleModalBaoGia}
+              >
+                <img
+                  src={baogiaIcon}
+                  alt="baogia"
+                  className={`${classes.icon} ${classes.iconBaogia}`}
+                />
+              </div>
+              <div className="tooltip">
+                <span className="tooltiptext">
+                  Số điện thoại: 0919.77.28.28{" "}
+                </span>
+              </div>
+            </div>
+            <div className={classes.contactItem}>
               <a
                 href="tel:0919772828"
                 target="__blank"
@@ -109,7 +138,7 @@ const Navbar = () => {
               >
                 <FiPhone className={classes.icon1} />
               </a>
-              <div className="tooltip">
+              <div className="tooltip tooltip1">
                 <span className="tooltiptext">
                   Số điện thoại: 0919.77.28.28{" "}
                 </span>

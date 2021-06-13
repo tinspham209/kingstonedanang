@@ -154,8 +154,12 @@ export const useStyles = makeStyles((theme) => ({
       top: "25px",
     },
 
+    "& .tooltip1 .tooltiptext": {
+      top: "100px",
+    },
+
     "& .tooltip2 .tooltiptext": {
-      top: "110px",
+      top: "190px",
     },
 
     "&:hover .tooltip .tooltiptext": {
@@ -173,10 +177,15 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     display: "flex",
     marginTop: "20px",
+    cursor: "pointer",
   },
   icon: {
     width: "50px",
     height: "50px",
     objectFit: "cover",
+  },
+  iconBaogia: {
+    width: "60px",
+    height: "60px",
   },
 }));

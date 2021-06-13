@@ -26,6 +26,7 @@ const fetchApi = createSlice({
     posts: null,
     hero: null,
     heroBlog: null,
+    modalBaoGia: false,
   },
   reducers: {
     setAboutData: (state, action) => {
@@ -82,6 +83,9 @@ const fetchApi = createSlice({
     setHeroBlog: (state, action) => {
       state.heroBlog = action.payload;
     },
+    setModalBaoGia: (state, action) => {
+      state.modalBaoGia = action.payload;
+    },
   },
 });
 
@@ -106,6 +110,7 @@ export const {
   setStoneGranite,
   setStoneMarble,
   setStoneList,
+  setModalBaoGia,
 } = actions;
 
 export default reducer;
