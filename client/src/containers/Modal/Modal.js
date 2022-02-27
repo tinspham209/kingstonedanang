@@ -21,6 +21,7 @@ const ModalContainer = () => {
   const dispatch = useDispatch();
 
   const classes = useStyles();
+  // eslint-disable-next-line no-unused-vars
   const handleOpen = () => {
     setOpen(true);
   };

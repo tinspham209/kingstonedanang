@@ -12,7 +12,7 @@ import { icon1, icon2 } from "./IconMarker";
 import logoImg from "../../../assets/img/logoMain.webp";
 const Map = () => {
   const position1 = [16.053448, 108.241285];
-  const position2 = [16.019548898981633, 108.25349247288918];
+  const position2 = [16.017419, 108.232088];
 
   const zoom = 13;
   return (
@@ -44,8 +44,7 @@ const Map = () => {
               </div>
               <div className="info__name">KingStone Đà Nẵng</div>
               <div className="info__address">
-                Xưởng gia công: Lô 3 Nguyễn Đức Thuận, Q.Ngũ Hành Sơn, TP Đà
-                Nẵng
+                Xưởng gia công: 364 Nguyễn Phước Lan, Hoà Xuân, Q.Cẩm Lệ, TP Đà Nẵng
               </div>
             </div>
           </Popup>

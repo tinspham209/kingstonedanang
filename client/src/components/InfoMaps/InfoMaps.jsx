@@ -29,8 +29,7 @@ const InfoMaps = () => {
                   VPGD: 37 Phan Thúc Duyện, Q.Ngũ Hành Sơn, TP Đà Nẵng
                 </Typography>
                 <Typography variant="h6" className={classes.subTitle}>
-                  Xưởng gia công: Lô 3 Nguyễn Đức Thuận, Q.Ngũ Hành Sơn, TP Đà
-                  Nẵng
+                  Xưởng gia công: 364 Nguyễn Phước Lan, Hoà Xuân, Q.Cẩm Lệ, TP Đà Nẵng
                 </Typography>
               </div>
               <a

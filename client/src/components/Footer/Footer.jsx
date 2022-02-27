@@ -28,7 +28,7 @@ const Footer = () => {
               </a>
             </div>
             <div className={classes.footer__centerText}>
-              Xưởng gia công: Lô 3 Nguyễn Đức Thuận, Q.Ngũ Hành Sơn, TP Đà Nẵng
+              Xưởng gia công: 364 Nguyễn Phước Lan, Hoà Xuân, Q.Cẩm Lệ, TP Đà Nẵng
             </div>
             <div className={classes.footer__centerText}>
               Website:{" "}
